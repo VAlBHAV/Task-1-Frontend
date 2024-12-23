@@ -8,7 +8,7 @@ const App = () => {
     const [sortOrder, setSortOrder] = useState('asc');
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/candidates')
+        axios.get('https://athena-task-1-backend.onrender.com')
             .then(response => setCandidates(response.data))
             .catch(error => console.error('Error fetching candidates:', error));
     }, []);
